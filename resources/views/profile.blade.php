@@ -12,7 +12,7 @@
     @csrf
     @method('POST')
     <input type="file" name="photo">
-    
+
     <hr>
     <button type="submit">Enviar</button>
 </form>

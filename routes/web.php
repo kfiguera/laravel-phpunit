@@ -21,6 +21,6 @@ Route::get('/about', function () {
     return 'Hola soy about';
 });
 
-Route::view('profile', [\App\Http\Controllers\ProfileController::class,'index']);
+Route::get('profile', [\App\Http\Controllers\ProfileController::class,'index']);
 
-Route::post('profile', [\App\Http\Controllers\ProfileController::class,'upload']);
+Route::post('profile', [\App\Http\Controllers\ProfileController::class,'store']);
